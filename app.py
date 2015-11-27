@@ -8,7 +8,7 @@ serialStream = serial.Serial("/dev/ttyAMA0", 9600, timeout=0.5)
 # construct a streamer instance with information to append to or create 
 # a bucket and an ini file location that contains the Initial State 
 # Account Access Key.
-streamer = Streamer(bucket_name="GPS Tracker", bucket_key="GPS_Tracker_20151126", ini_file_location="./isstreamer.ini")
+streamer = Streamer(bucket_name="GPS Tracker", ini_file_location="./isstreamer.ini")
 
 try:
 	while True:
