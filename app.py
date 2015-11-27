@@ -18,7 +18,7 @@ try:
 			streamer.log("Location", "{lat},{lon}".format(lat=data.latitude,lon=data.longitude))
 			streamer.log("Altitude ({unit})".format(unit=data.altitude_units), data.altitude)
 			
-			# sleep for half a second before reading again
-			time.sleep(.5)
+			# sleep for 5 seconds before reading again
+			time.sleep(5)
 except KeyboardInterrupt:
 	streamer.close()
