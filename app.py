@@ -14,6 +14,7 @@ try:
 	while True:
 		sentence = serialStream.readline()
 		if sentence.find('GGA') > 0:
+			print sentence
 			data = pynmea2.parse(sentence)
 			streamer.log("Location", "{lat},{lon}".format(lat=data.latitude,lon=data.longitude))
 			streamer.log("Altitude ({unit})".format(unit=data.altitude_units), data.altitude)
