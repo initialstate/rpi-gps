@@ -1,6 +1,5 @@
 import serial
 import pynmea2
-import time
 from ISStreamer.Streamer import Streamer
 
 serialStream = serial.Serial("/dev/ttyAMA0", 9600, timeout=0.5)
