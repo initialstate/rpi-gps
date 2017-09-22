@@ -1,4 +1,4 @@
-#Raspberry Pi GPS Tracker
+# Raspberry Pi GPS Tracker
 
 This repository contains code samples and instructions for building a simple, inexpensive GPS tracker with a Raspberry Pi and Adafruit Ultimate GPS breakout.
 
